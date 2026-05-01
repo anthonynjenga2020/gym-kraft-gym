@@ -1,0 +1,17 @@
+{
+  "name": "jenga-config-builder",
+  "version": "1.0.0",
+  "description": "Converts a Jenga Systems intake submission into a gym.config.json file.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build":  "node index.js --id $ID --out ./",
+    "test":   "node index.js --file test-intake.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

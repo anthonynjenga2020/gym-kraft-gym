@@ -1,0 +1,28 @@
+{
+  "id": "test-uuid-1234",
+  "created_at": "2026-04-23T10:00:00Z",
+  "gym_name": "Iron Forge Gym",
+  "owner_name": "David Kamau",
+  "email": "david@ironforge.co.ke",
+  "phone": "+254712345678",
+  "location": "Westlands, Nairobi",
+  "tagline": "Forge Your Best Self",
+  "services": ["Weight Training", "HIIT", "Boxing", "Yoga"],
+  "membership_plans": [
+    { "name": "Basic",   "price": 2500, "features": ["Gym access", "Locker room"] },
+    { "name": "Pro",     "price": 4500, "features": ["Gym access", "Locker room", "PT session"] },
+    { "name": "Elite",   "price": 7000, "features": ["Gym access", "Locker room", "PT session x4", "Diet plan"] }
+  ],
+  "template_variant": "V2",
+  "primary_color": "#FF6B00",
+  "accent_color": "#1A1A1A",
+  "logo_url": "",
+  "hero_image_url": "",
+  "gallery_urls": [],
+  "social_links": {
+    "instagram": "@ironforge_gym",
+    "facebook":  "ironforgenbi",
+    "whatsapp":  "+254712345678"
+  },
+  "status": "pending"
+}

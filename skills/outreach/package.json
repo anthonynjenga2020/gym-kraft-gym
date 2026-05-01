@@ -1,0 +1,20 @@
+{
+  "name": "jenga-outreach",
+  "version": "1.0.0",
+  "description": "WhatsApp outreach sequence manager for Jenga Systems gym leads.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start":     "node index.js",
+    "queue":     "node index.js --queue",
+    "followups": "node index.js --followups",
+    "gen":       "node index.js --gen",
+    "gen:followups": "node index.js --gen --followups"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "jenga-google-maps-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes Google Maps for gym leads in Nairobi, scores them, and generates outreach messages.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "tier1": "node index.js --tier1",
+    "report": "node index.js --report",
+    "outreach": "node index.js --outreach",
+    "outreach:top5": "node index.js --outreach --limit 5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

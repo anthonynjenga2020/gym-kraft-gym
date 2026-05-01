@@ -1,0 +1,267 @@
+{
+  "gymId": "demo-gym",
+  "gymName": "IRONCLAD FITNESS",
+  "tagline": "Built Different. Train Different.",
+  "subTagline": "Nairobi's most results-driven training facility. No excuses, just progress.",
+  "phone": "+254 700 000 000",
+  "email": "hello@ironclad.co.ke",
+  "location": "Westlands, Nairobi, Kenya",
+  "googleMapsEmbed": "https://maps.google.com/maps?q=Westlands+Nairobi&output=embed",
+  "logoUrl": "",
+  "heroImageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80",
+  "aboutImageUrl": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&q=80",
+    "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80",
+    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80",
+    "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80",
+    "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80",
+    "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80"
+  ],
+  "primaryColor": "#FF4E1A",
+  "primaryDark": "#CC3E14",
+  "accentColor": "#FFFFFF",
+  "bgColor": "#0A0A0A",
+  "surfaceColor": "#141414",
+  "borderColor": "#222222",
+  "templateVariant": "V1",
+  "stats": [
+    { "value": "500+", "label": "Active Members" },
+    { "value": "12", "label": "Elite Trainers" },
+    { "value": "5★", "label": "Google Rating" },
+    { "value": "30+", "label": "Classes / Week" }
+  ],
+  "aboutTitle": "We Don't Do Half Reps. In Training or in Life.",
+  "aboutDescription": "Ironclad Fitness was built for people who are serious about results. No gimmicks, no overcrowded machines, no egos. Just a community of people who show up, put in the work, and leave better than they came in.\n\nWhether you're picking up your first dumbbell or training for your next competition — you belong here.",
+  "services": [
+    { "name": "Weight Training", "icon": "", "desc": "Fully equipped free weights and machines. From beginners to powerlifters, we've got your setup.", "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" },
+    { "name": "HIIT Classes", "icon": "", "desc": "High-intensity interval training designed to torch fat and build endurance. 45 minutes, max results.", "image": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80" },
+    { "name": "Yoga & Mobility", "icon": "", "desc": "Recovery and flexibility sessions to keep your body working the way it should.", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80" },
+    { "name": "Boxing & MMA", "icon": "", "desc": "Bag work, technique, sparring — for fitness or competition. Bags, gloves, and coaches provided.", "image": "https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?w=800&q=80" },
+    { "name": "Cardio Zone", "icon": "", "desc": "Treadmills, bikes, rowers. The boring stuff that actually matters. 24/7 accessible.", "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80" },
+    { "name": "Personal Training", "icon": "", "desc": "One-on-one sessions with a certified trainer who actually listens to what you want to achieve.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" }
+  ],
+  "schedule": [
+    {
+      "day": "Monday",
+      "classes": [
+        { "time": "6:00 AM", "name": "HIIT Blast", "trainer": "Aisha Kimani", "duration": "45 min", "level": "All Levels", "spots": 15 },
+        { "time": "9:00 AM", "name": "Yoga Flow", "trainer": "Aisha Kimani", "duration": "60 min", "level": "Beginner", "spots": 12 },
+        { "time": "12:00 PM", "name": "Boxing Fundamentals", "trainer": "Brian Mutua", "duration": "60 min", "level": "Beginner", "spots": 10 },
+        { "time": "6:00 PM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "60 min", "level": "Intermediate", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "60 min", "level": "All Levels", "spots": 20 },
+        { "time": "9:00 AM", "name": "HIIT Blast", "trainer": "Aisha Kimani", "duration": "45 min", "level": "All Levels", "spots": 15 },
+        { "time": "5:30 PM", "name": "Boxing Advanced", "trainer": "Brian Mutua", "duration": "90 min", "level": "Advanced", "spots": 8 },
+        { "time": "7:00 PM", "name": "Yoga & Stretch", "trainer": "Aisha Kimani", "duration": "60 min", "level": "All Levels", "spots": 12 }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "classes": [
+        { "time": "6:00 AM", "name": "HIIT Blast", "trainer": "Aisha Kimani", "duration": "45 min", "level": "All Levels", "spots": 15 },
+        { "time": "10:00 AM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "60 min", "level": "Intermediate", "spots": 20 },
+        { "time": "6:00 PM", "name": "Boxing Fundamentals", "trainer": "Brian Mutua", "duration": "60 min", "level": "Beginner", "spots": 10 },
+        { "time": "7:30 PM", "name": "Night HIIT", "trainer": "Aisha Kimani", "duration": "45 min", "level": "Advanced", "spots": 12 }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "60 min", "level": "All Levels", "spots": 20 },
+        { "time": "9:00 AM", "name": "Yoga Flow", "trainer": "Aisha Kimani", "duration": "60 min", "level": "All Levels", "spots": 12 },
+        { "time": "6:00 PM", "name": "HIIT Blast", "trainer": "Aisha Kimani", "duration": "45 min", "level": "All Levels", "spots": 15 },
+        { "time": "7:30 PM", "name": "MMA Sparring", "trainer": "Brian Mutua", "duration": "90 min", "level": "Advanced", "spots": 8 }
+      ]
+    },
+    {
+      "day": "Friday",
+      "classes": [
+        { "time": "6:00 AM", "name": "HIIT Blast", "trainer": "Aisha Kimani", "duration": "45 min", "level": "All Levels", "spots": 15 },
+        { "time": "9:00 AM", "name": "Boxing Fundamentals", "trainer": "Brian Mutua", "duration": "60 min", "level": "Beginner", "spots": 10 },
+        { "time": "12:00 PM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "60 min", "level": "Intermediate", "spots": 20 },
+        { "time": "6:00 PM", "name": "Friday Night Fight", "trainer": "Brian Mutua", "duration": "90 min", "level": "All Levels", "spots": 12 }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "classes": [
+        { "time": "7:00 AM", "name": "Weekend Warrior HIIT", "trainer": "Aisha Kimani", "duration": "60 min", "level": "All Levels", "spots": 20 },
+        { "time": "9:00 AM", "name": "Strength & Conditioning", "trainer": "James Ochieng", "duration": "90 min", "level": "All Levels", "spots": 20 },
+        { "time": "11:00 AM", "name": "Boxing Open Gym", "trainer": "Brian Mutua", "duration": "120 min", "level": "All Levels", "spots": 15 }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "classes": [
+        { "time": "8:00 AM", "name": "Recovery Yoga", "trainer": "Aisha Kimani", "duration": "75 min", "level": "All Levels", "spots": 15 },
+        { "time": "10:00 AM", "name": "Open Gym", "trainer": "James Ochieng", "duration": "120 min", "level": "All Levels", "spots": 30 }
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "name": "30-Day Shred",
+      "tagline": "Lose 5–10kg in 30 days. Guaranteed progress or your money back.",
+      "duration": "30 Days",
+      "level": "All Levels",
+      "price": 8500,
+      "currency": "KES",
+      "icon": "",
+      "includes": ["Daily HIIT sessions", "Nutrition plan", "WhatsApp accountability group", "Weekly weigh-ins with trainer", "Progress photos every 10 days"]
+    },
+    {
+      "name": "12-Week Strength Builder",
+      "tagline": "Go from beginner to lifting serious weight with a structured periodized program.",
+      "duration": "12 Weeks",
+      "level": "Beginner–Intermediate",
+      "price": 22000,
+      "currency": "KES",
+      "icon": "",
+      "includes": ["3x weekly strength sessions", "Custom program by James", "Monthly body composition scan", "Supplement guidance", "Post-program assessment"]
+    },
+    {
+      "name": "Fight Camp",
+      "tagline": "8 weeks to fight-ready. Boxing technique, conditioning, and mental toughness.",
+      "duration": "8 Weeks",
+      "level": "Intermediate–Advanced",
+      "price": 15000,
+      "currency": "KES",
+      "icon": "",
+      "includes": ["4x weekly sessions with Brian", "Sparring (weeks 5–8)", "Full boxing kit included", "Nutrition for fighters guide", "Sparring video review"]
+    }
+  ],
+  "transformations": [
+    {
+      "name": "Kevin M.",
+      "duration": "5 months",
+      "statBefore": "102kg",
+      "statAfter": "84kg",
+      "change": "-18kg",
+      "highlight": "Dropped 4 trouser sizes",
+      "quote": "I'd tried three gyms before this. None of them actually pushed me. Ironclad was different — the coaches remember your name, they push you when you want to quit, and they celebrate every win. Best decision I've made.",
+      "program": "30-Day Shred → Pro Membership"
+    },
+    {
+      "name": "Wanjiru N.",
+      "duration": "8 months",
+      "statBefore": "Could barely do 5 push-ups",
+      "statAfter": "Completed her first 10km run",
+      "change": "10km in 54 min",
+      "highlight": "Lost 15kg, ran first race",
+      "quote": "I was the most unfit person in the HIIT class on day one. Aisha said 'just survive today.' Eight months later I ran the Standard Chartered Marathon 10K. I cried at the finish line.",
+      "program": "Beginner HIIT → Pro Membership"
+    },
+    {
+      "name": "Samuel K.",
+      "duration": "6 months",
+      "statBefore": "Bench Press: 40kg",
+      "statAfter": "Bench Press: 110kg",
+      "change": "+70kg bench",
+      "highlight": "First powerlifting competition",
+      "quote": "James built me a 12-week program and literally every month I hit a new personal best. Six months in, I competed for the first time. I didn't win — but I also didn't care. I was there.",
+      "program": "12-Week Strength Builder → Elite Membership"
+    }
+  ],
+  "trainers": [
+    {
+      "id": "james-ochieng",
+      "name": "James Ochieng",
+      "specialty": "Strength & Conditioning",
+      "experience": "8 Years",
+      "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80",
+      "coverImage": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80",
+      "bio": "James has been coaching athletes and everyday people in Nairobi for over 8 years. He holds a BSc in Sports Science from the University of Nairobi and is certified by the National Strength and Conditioning Association (NSCA). His specialty is periodized strength programming — building a base, then systematically pushing athletes to new levels every month.",
+      "certifications": ["NSCA-CSCS", "BSc Sports Science (UoN)", "CrossFit Level 2", "First Aid Certified"],
+      "specialties": ["Powerlifting", "Olympic Lifting", "Athletic Conditioning", "Sports Rehabilitation"],
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "quote": "Consistency beats intensity every time. Show up, do the work, trust the process."
+    },
+    {
+      "id": "aisha-kimani",
+      "name": "Aisha Kimani",
+      "specialty": "HIIT & Nutrition",
+      "experience": "6 Years",
+      "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80",
+      "coverImage": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&q=80",
+      "bio": "Aisha is the energy of Ironclad. Her HIIT and yoga classes have become the most popular in the gym — not because they're easy, but because she somehow makes suffering feel fun. She holds a diploma in Nutrition Science and designs custom meal plans for members who want results beyond the gym floor.",
+      "certifications": ["ACE Certified Personal Trainer", "Yoga Alliance 200-HR", "Diploma in Nutrition Science", "Precision Nutrition Level 1"],
+      "specialties": ["HIIT", "Fat Loss", "Yoga & Mobility", "Nutrition Coaching", "Group Fitness"],
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "quote": "The goal is to make your body a place you're proud to live in."
+    },
+    {
+      "id": "brian-mutua",
+      "name": "Brian Mutua",
+      "specialty": "Boxing & MMA",
+      "experience": "10 Years",
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&q=80",
+      "coverImage": "https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?w=1200&q=80",
+      "bio": "Brian is a former national amateur boxing champion who transitioned into coaching after 5 years of competitive fighting. He's trained fighters who have gone on to compete nationally and regionally. His classes aren't just for fighters — anyone who wants the best conditioning workout of their life should be in his sessions.",
+      "certifications": ["Kenya Amateur Boxing Federation Coach License", "ACSM Certified", "First Aid & Sports Injury"],
+      "specialties": ["Boxing", "Kickboxing", "MMA Ground & Pound", "Conditioning for Combat Sports", "Self-Defense"],
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "quote": "Boxing teaches you more about yourself in one round than most sports teach you in a season."
+    }
+  ],
+  "testimonials": [
+    { "name": "Kevin M.", "rating": 5, "platform": "Google", "text": "Best gym in Westlands, full stop. The trainers actually push you and the equipment is always clean and working. Lost 12kg in 4 months.", "date": "Jan 2025" },
+    { "name": "Wanjiru N.", "rating": 5, "platform": "Google", "text": "I was nervous joining a gym for the first time but the community here made me feel at home immediately. Now I come 5x a week and can't imagine not training here.", "date": "Feb 2025" },
+    { "name": "Samuel K.", "rating": 5, "platform": "Google", "text": "James is a phenomenal coach. He built me a 12-week strength program and I hit a new deadlift PB every single month. Highly recommend the PT sessions.", "date": "Mar 2025" }
+  ],
+  "faqs": [
+    { "q": "Do I need any fitness experience to join?", "a": "Absolutely not. We have members who had never set foot in a gym before joining us. Every trainer here started someone at zero. You'll be placed in the right class for your level from day one." },
+    { "q": "What does the free trial include?", "a": "7 full days of unlimited access — any class, all the equipment, open gym access. No commitment required. Just show up, train, and see if we're the right fit for you." },
+    { "q": "How do membership payments work?", "a": "We accept M-Pesa, bank transfer, and cash. Monthly memberships are charged on your join date each month. You can cancel anytime with 7 days' notice." },
+    { "q": "Is there parking available?", "a": "Yes, we have free parking for members in the basement of the building. Street parking is also available on the main road." },
+    { "q": "Can I freeze my membership?", "a": "Yes. Life happens. You can freeze your membership for up to 60 days per year — for travel, injury, or anything else. Just let us know in advance." },
+    { "q": "Do you offer personal training?", "a": "Yes. All three of our head coaches offer one-on-one PT sessions. Pricing starts at Ksh 2,000 per session or Ksh 15,000 for a package of 8 sessions." }
+  ],
+  "membershipPlans": [
+    {
+      "name": "Starter",
+      "price": 2500,
+      "currency": "KES",
+      "period": "month",
+      "highlight": false,
+      "features": ["Full gym access", "2 group classes/week", "Locker access", "Fitness assessment"]
+    },
+    {
+      "name": "Pro",
+      "price": 4500,
+      "currency": "KES",
+      "period": "month",
+      "highlight": true,
+      "badge": "Most Popular",
+      "features": ["Full gym access", "Unlimited group classes", "Locker + towel service", "Monthly check-in with trainer", "App access & progress tracking"]
+    },
+    {
+      "name": "Elite",
+      "price": 8000,
+      "currency": "KES",
+      "period": "month",
+      "highlight": false,
+      "features": ["Everything in Pro", "4 PT sessions/month", "Nutrition consultation", "Priority class booking", "24/7 gym access", "Guest pass (2/month)"]
+    }
+  ],
+  "socialLinks": {
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "whatsapp": "https://wa.me/254700000000",
+    "tiktok": ""
+  },
+  "whatsappNumber": "254700000000",
+  "whatsappMessage": "Hi! I'd like to know more about joining Ironclad Fitness.",
+  "trialCTA": "Claim Your Free 7-Day Trial",
+  "paystackPublicKey": "",
+  "deployedUrl": "",
+  "vercelProjectId": "",
+  "supabaseRowId": "",
+  "googlePlaceId": "",
+  "googleReviewUrl": "",
+  "seoDescription": ""
+}

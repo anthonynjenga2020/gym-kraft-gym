@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #FF4E1A;
+    --primary-dark: #CC3E14;
+    --accent: #FFFFFF;
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --border: #222222;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-primary { color: var(--primary); }
+  .bg-primary { background-color: var(--primary); }
+  .border-primary { border-color: var(--primary); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-gym-bg { background-color: var(--bg); }
+  .border-gym { border-color: var(--border); }
+
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .section-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .stagger-1 { transition-delay: 0.1s; }
+  .stagger-2 { transition-delay: 0.2s; }
+  .stagger-3 { transition-delay: 0.3s; }
+  .stagger-4 { transition-delay: 0.4s; }
+  .stagger-5 { transition-delay: 0.5s; }
+  .stagger-6 { transition-delay: 0.6s; }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--primary), #FF8C42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-glow {
+    background: radial-gradient(ellipse at center, rgba(255, 78, 26, 0.15) 0%, transparent 70%);
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary) !important;
+    box-shadow: 0 20px 60px rgba(255, 78, 26, 0.15);
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 78, 26, 0.4);
+  }
+
+  .btn-outline {
+    border: 2px solid rgba(255,255,255,0.2);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--primary);
+    background-color: rgba(255, 78, 26, 0.1);
+  }
+
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+}
+
+/* Use CSS variable for font so themes can swap it */
+h1, h2, h3, h4, h5, h6, .font-headline {
+  font-family: var(--font-headline, 'Space Grotesk', sans-serif);
+}
+body {
+  font-family: var(--font-body, 'Inter', sans-serif);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+/* Navbar scroll class */
+.navbar-scrolled {
+  background-color: color-mix(in srgb, var(--bg) 95%, transparent) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+/* Border radius driven by theme */
+.rounded-sm {
+  border-radius: var(--radius, 2px) !important;
+}
+
+/* Card hover shadow uses theme primary */
+.card-hover:hover {
+  box-shadow: var(--shadow-primary) !important;
+}
+
+/* ============================================================
+   V2 — CLEAN PRO
+   Rounder, airier, softer edges. Green professional feel.
+   ============================================================ */
+.theme-v2 .btn-primary {
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+}
+.theme-v2 .btn-outline {
+  border-radius: 8px;
+}
+.theme-v2 .card-hover:hover {
+  transform: translateY(-4px);
+}
+.theme-v2 section {
+  position: relative;
+}
+/* Subtle top border on sections */
+.theme-v2 section + section::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+}
+/* Softer stat/testimonial cards */
+.theme-v2 [style*="var(--surface)"] {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+/* ============================================================
+   V3 — ENERGY RUSH
+   Zero radius. Yellow accents. Uppercase everything.
+   Strong horizontal dividers. Diagonal energy.
+   ============================================================ */
+.theme-v3 body {
+  letter-spacing: 0.01em;
+}
+.theme-v3 .btn-primary {
+  border-radius: 0;
+  letter-spacing: 0.15em;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.theme-v3 .btn-primary:hover {
+  color: #000000;
+}
+.theme-v3 .btn-outline {
+  border-radius: 0;
+  letter-spacing: 0.15em;
+}
+/* Yellow text for primary-colored text */
+.theme-v3 [style*="var(--primary)"] {
+  font-weight: 800;
+}
+/* Bold section divider lines */
+.theme-v3 section + section {
+  border-top: 2px solid var(--border);
+}
+/* Slanted hero decoration */
+.theme-v3 #hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--bg);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 10;
+}
+/* Nav has thicker bottom border */
+.theme-v3 .navbar-scrolled {
+  border-bottom: 2px solid var(--primary) !important;
+}
+/* Number/stat emphasis */
+.theme-v3 .font-headline {
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   V4 — URBAN GRIT
+   Zero radius. Warm amber. Grain texture overlay.
+   Raw industrial feel. Thick borders.
+   ============================================================ */
+.theme-v4::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+.theme-v4 .btn-primary {
+  border-radius: 0;
+  letter-spacing: 0.12em;
+  position: relative;
+  overflow: hidden;
+}
+/* Shimmer on button hover */
+.theme-v4 .btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.4s ease;
+}
+.theme-v4 .btn-primary:hover::after {
+  left: 150%;
+}
+.theme-v4 .btn-outline {
+  border-radius: 0;
+  letter-spacing: 0.1em;
+}
+/* Thick left border accent on cards */
+.theme-v4 .card-hover {
+  border-left: 3px solid var(--border) !important;
+  transition: border-left-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.theme-v4 .card-hover:hover {
+  border-left-color: var(--primary) !important;
+  transform: translateY(-4px) translateX(2px);
+}
+/* Nav bottom underline */
+.theme-v4 .navbar-scrolled {
+  border-bottom: 2px solid var(--border) !important;
+}
+/* Oswald looks better with more weight */
+.theme-v4 .font-headline {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* Warm tinted gradient glows */
+.theme-v4 .hero-glow {
+  background: radial-gradient(ellipse at center, rgba(217,119,6,0.12) 0%, transparent 70%);
+}
+
+/* ============================================================
+   V5 — MIDNIGHT BLUE
+   Deep navy. Cyan glow. Modern, tech-forward.
+   Glowing borders, gradient accents, neon feel.
+   ============================================================ */
+.theme-v5 .btn-primary {
+  border-radius: 6px;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, var(--primary), #0284C7);
+  box-shadow: 0 0 20px rgba(6,182,212,0.3);
+}
+.theme-v5 .btn-primary:hover {
+  background: linear-gradient(135deg, #0891B2, var(--primary));
+  box-shadow: 0 0 30px rgba(6,182,212,0.5);
+  transform: translateY(-2px);
+}
+.theme-v5 .btn-outline {
+  border-radius: 6px;
+}
+/* Glowing card borders on hover */
+.theme-v5 .card-hover:hover {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 1px var(--primary), 0 20px 60px rgba(6,182,212,0.15) !important;
+  transform: translateY(-4px);
+}
+/* Gradient text for headlines */
+.theme-v5 .gradient-text {
+  background: linear-gradient(135deg, var(--primary), #818CF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* Glowing nav border */
+.theme-v5 .navbar-scrolled {
+  background-color: rgba(7,11,20,0.95) !important;
+  border-bottom: 1px solid rgba(6,182,212,0.2) !important;
+  box-shadow: 0 0 30px rgba(6,182,212,0.05);
+}
+/* Blue-tinted section backgrounds */
+.theme-v5 .hero-glow {
+  background: radial-gradient(ellipse at center, rgba(6,182,212,0.12) 0%, transparent 70%);
+}
+/* Glow on primary-colored elements */
+.theme-v5 [style*="var(--primary)"] {
+  text-shadow: 0 0 20px rgba(6,182,212,0.4);
+}
+/* Subtle grid overlay */
+.theme-v5 body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(6,182,212,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,182,212,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}

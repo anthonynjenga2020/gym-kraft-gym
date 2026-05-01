@@ -1,0 +1,206 @@
+{
+  "searchStringsArray": [
+
+    "gym Westlands Nairobi",
+    "fitness center Westlands Nairobi",
+    "crossfit Westlands Nairobi",
+
+    "gym Kilimani Nairobi",
+    "fitness center Kilimani Nairobi",
+    "crossfit Kilimani Nairobi",
+
+    "gym Karen Nairobi",
+    "fitness center Karen Nairobi",
+    "crossfit Karen Nairobi",
+
+    "gym Lavington Nairobi",
+    "fitness center Lavington Nairobi",
+    "crossfit Lavington Nairobi",
+
+    "gym Parklands Nairobi",
+    "fitness center Parklands Nairobi",
+    "crossfit Parklands Nairobi",
+
+    "gym Upperhill Nairobi",
+    "fitness center Upperhill Nairobi",
+
+    "gym Kasarani Nairobi",
+    "fitness center Kasarani Nairobi",
+
+    "gym Ruaka Nairobi",
+    "fitness center Ruaka Nairobi",
+
+    "gym Kileleshwa Nairobi",
+    "fitness center Kileleshwa Nairobi",
+
+    "gym Hurlingham Nairobi",
+    "fitness center Hurlingham Nairobi",
+
+    "gym Ngong Road Nairobi",
+    "fitness center Ngong Road Nairobi",
+
+    "gym South C Nairobi",
+    "gym South B Nairobi",
+
+    "gym Embakasi Nairobi",
+    "fitness center Embakasi Nairobi",
+
+    "gym Langata Nairobi",
+    "fitness center Langata Nairobi",
+
+    "gym Gigiri Nairobi",
+    "gym Runda Nairobi",
+    "gym Muthaiga Nairobi",
+
+    "gym Eastleigh Nairobi",
+    "fitness center Eastleigh Nairobi",
+
+    "gym Buruburu Nairobi",
+    "gym Donholm Nairobi",
+
+    "gym Rongai Nairobi",
+    "gym Syokimau Nairobi",
+    "gym Kitengela Nairobi",
+
+    "gym Pipeline Nairobi",
+    "gym Umoja Nairobi",
+
+    "gym CBD Nairobi",
+    "fitness center CBD Nairobi",
+
+    "gym Thika Road Nairobi",
+    "fitness center Thika Road Nairobi",
+
+    "health club Nairobi",
+    "boxing gym Nairobi",
+    "martial arts gym Nairobi",
+    "yoga studio Nairobi",
+    "pilates studio Nairobi",
+    "spinning class Nairobi",
+    "MMA gym Nairobi",
+    "personal training Nairobi",
+
+    "gym Mombasa",
+    "fitness center Mombasa",
+    "crossfit Mombasa",
+    "gym Nyali Mombasa",
+    "gym Bamburi Mombasa",
+    "gym Likoni Mombasa",
+    "gym Diani Beach",
+
+    "gym Kisumu",
+    "fitness center Kisumu",
+    "crossfit Kisumu",
+
+    "gym Nakuru",
+    "fitness center Nakuru",
+    "crossfit Nakuru",
+
+    "gym Eldoret",
+    "fitness center Eldoret",
+
+    "gym Thika",
+    "fitness center Thika",
+
+    "gym Nyeri",
+    "gym Meru Kenya",
+    "gym Malindi",
+    "gym Machakos",
+    "gym Kitale",
+    "gym Kakamega",
+    "gym Kericho",
+    "gym Naivasha",
+    "gym Nanyuki",
+    "gym Kisii",
+    "gym Embu",
+    "gym Garissa",
+    "gym Lamu",
+
+    "gym Kampala",
+    "fitness center Kampala",
+    "crossfit Kampala",
+    "health club Kampala",
+
+    "gym Kololo Kampala",
+    "fitness center Kololo Kampala",
+
+    "gym Nakasero Kampala",
+    "fitness center Nakasero Kampala",
+
+    "gym Ntinda Kampala",
+    "gym Bukoto Kampala",
+    "gym Kisaasi Kampala",
+    "gym Munyonyo Kampala",
+    "gym Bugolobi Kampala",
+    "gym Muyenga Kampala",
+    "gym Kansanga Kampala",
+
+    "gym Entebbe Uganda",
+    "fitness center Entebbe Uganda",
+
+    "gym Jinja Uganda",
+    "gym Gulu Uganda",
+    "gym Mbarara Uganda",
+    "gym Mbale Uganda",
+    "gym Masaka Uganda",
+    "gym Lira Uganda",
+
+    "gym Dar es Salaam",
+    "fitness center Dar es Salaam",
+    "crossfit Dar es Salaam",
+    "health club Dar es Salaam",
+
+    "gym Masaki Dar es Salaam",
+    "fitness center Masaki Dar es Salaam",
+
+    "gym Oyster Bay Dar es Salaam",
+    "gym Mikocheni Dar es Salaam",
+    "gym Upanga Dar es Salaam",
+    "gym Kariakoo Dar es Salaam",
+    "gym Kinondoni Dar es Salaam",
+
+    "gym Arusha Tanzania",
+    "fitness center Arusha Tanzania",
+    "crossfit Arusha",
+
+    "gym Moshi Tanzania",
+    "gym Zanzibar",
+    "fitness center Zanzibar",
+    "gym Mwanza Tanzania",
+    "gym Dodoma Tanzania",
+    "gym Morogoro Tanzania",
+    "gym Tanga Tanzania",
+
+    "gym Kigali",
+    "fitness center Kigali",
+    "crossfit Kigali",
+    "health club Kigali",
+
+    "gym Kiyovu Kigali",
+    "gym Kimihurura Kigali",
+    "gym Nyarutarama Kigali",
+    "gym Gacuriro Kigali",
+    "gym Kacyiru Kigali",
+    "gym Remera Kigali",
+
+    "gym Butare Rwanda",
+    "gym Rubavu Rwanda",
+    "gym Musanze Rwanda",
+    "gym Huye Rwanda",
+    "gym Muhanga Rwanda"
+
+  ],
+
+  "maxCrawledPlacesPerSearch": 20,
+  "language": "en",
+  "maxImages": 0,
+  "exportPlaceUrls": true,
+  "includeHistogram": false,
+  "includeOpeningHours": false,
+  "includePeopleAlsoSearch": false,
+  "additionalInfo": false,
+  "reviewsSort": "newest",
+  "maxReviews": 0,
+  "scrapeDirectories": false,
+  "deeperCityScrape": false
+}

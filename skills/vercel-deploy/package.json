@@ -1,0 +1,16 @@
+{
+  "name": "jenga-vercel-deploy",
+  "version": "1.0.0",
+  "description": "Creates a Vercel project from a Jenga gym GitHub repo and deploys it.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node index.js --repo $REPO --gymId $GYM_ID"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
