@@ -14,7 +14,7 @@
   "accentColor": "#1A1A1A",
   "templateVariant": "V1",
   "aboutTitle": "About Kraft Gym",
-  "aboutDescription": "We are a professional fitness and wellness gym that is equipped with modern equipments and certified trainers.we offer aerobics,Zhumba,spinning&tabata",
+  "aboutDescription": "We are a professional fitness and wellness gym equipped with modern equipment and certified trainers.",
   "services": [
     {
       "name": "Weight Training",
@@ -47,10 +47,7 @@
       "price": 2500,
       "currency": "KES",
       "period": "month",
-      "features": [
-        "Full gym access",
-        "2 group classes/week"
-      ],
+      "features": [],
       "highlight": false
     },
     {
@@ -58,11 +55,7 @@
       "price": 4500,
       "currency": "KES",
       "period": "month",
-      "features": [
-        "Full gym access",
-        "unlimited classes",
-        "trainer check-in"
-      ],
+      "features": [],
       "highlight": true,
       "badge": "Most Popular"
     },
@@ -71,11 +64,7 @@
       "price": 8000,
       "currency": "KES",
       "period": "month",
-      "features": [
-        "Everything in Pro",
-        "4 PT sessions/month",
-        "nutrition plan"
-      ],
+      "features": [],
       "highlight": false
     }
   ],
