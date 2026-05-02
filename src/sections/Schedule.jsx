@@ -9,6 +9,7 @@ const levelColors = {
 }
 
 export default function Schedule({ config }) {
+  if (!config.schedule?.length) return null
   const days = config.schedule.map(d => d.day)
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' })
   const defaultDay = days.includes(today) ? today : days[0]
@@ -86,7 +87,7 @@ export default function Schedule({ config }) {
                   </div>
                   <p className="text-gray-500 text-sm">
                     with <span className="text-gray-300 font-medium">{cls.trainer}</span>
-                    <span className="mx-2 opacity-40">·</span>
+                    <span className="mx-2 opacity-40">Â·</span>
                     {cls.duration}
                   </p>
                 </div>
