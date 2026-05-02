@@ -105,7 +105,7 @@ export default function Hero({ config }) {
 
           {/* Trust bar */}
           <div className="hero-anim flex flex-wrap gap-6 mt-12 pt-10 border-t border-white/10">
-            {config.stats.map((stat, i) => (
+            {(config.stats ?? []).map((stat, i) => (
               <div key={i} className="flex items-center gap-3">
                 <span className="font-headline font-black text-2xl" style={{ color: 'var(--primary)' }}>
                   {stat.value}
