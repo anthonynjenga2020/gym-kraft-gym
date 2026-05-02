@@ -1,13 +1,14 @@
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function Programs({ config }) {
+  if (!config.programs?.length) return null
   const headerRef = useReveal()
   const contentRef = useReveal()
 
   const levelColors = {
     'All Levels': '#33D169',
-    'Beginner–Intermediate': '#4C9FFF',
-    'Intermediate–Advanced': '#FF4E1A',
+    'BeginnerâIntermediate': '#4C9FFF',
+    'IntermediateâAdvanced': '#FF4E1A',
   }
 
   return (
@@ -111,7 +112,7 @@ export default function Programs({ config }) {
                       onMouseOver={!isFeatured ? (e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.backgroundColor = 'rgba(255,78,26,0.08)' }) : undefined}
                       onMouseOut={!isFeatured ? (e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.backgroundColor = 'transparent' }) : undefined}
                     >
-                      Enquire Now →
+                      Enquire Now â
                     </a>
                   </div>
                 </div>
@@ -122,7 +123,7 @@ export default function Programs({ config }) {
 
         {/* Note */}
         <p className="text-center text-gray-600 text-xs mt-8 uppercase tracking-widest">
-          All programs include full gym access for the duration · M-Pesa accepted
+          All programs include full gym access for the duration Â· M-Pesa accepted
         </p>
       </div>
     </section>
