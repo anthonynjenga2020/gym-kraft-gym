@@ -1,6 +1,7 @@
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function Transformation({ config }) {
+  if (!config.transformations?.length) return null
   const headerRef = useReveal()
   const contentRef = useReveal()
 
@@ -29,7 +30,7 @@ export default function Transformation({ config }) {
             </p>
           </div>
           <a href="#free-trial" className="btn-primary px-6 py-3 rounded-sm text-sm self-start lg:self-auto shrink-0">
-            Start Your Story →
+            Start Your Story â
           </a>
         </div>
 
@@ -52,7 +53,7 @@ export default function Transformation({ config }) {
                       <div className="h-px w-6" style={{ backgroundColor: 'var(--border)' }} />
                       <div className="w-7 h-7 rounded-sm flex items-center justify-center text-white text-xs font-black"
                         style={{ backgroundColor: 'var(--primary)' }}>
-                        →
+                        â
                       </div>
                       <div className="h-px w-6" style={{ backgroundColor: 'var(--border)' }} />
                     </div>
@@ -85,7 +86,7 @@ export default function Transformation({ config }) {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-white font-bold text-sm">{t.name}</p>
-                    <p className="text-gray-600 text-xs">{t.duration} · {t.program}</p>
+                    <p className="text-gray-600 text-xs">{t.duration} Â· {t.program}</p>
                   </div>
                   <div className="px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-widest"
                     style={{ backgroundColor: 'rgba(255,78,26,0.1)', color: 'var(--primary)' }}>
@@ -109,7 +110,7 @@ export default function Transformation({ config }) {
             <p className="text-gray-500 text-sm mt-1">7 days free. No credit card. No contracts. Just show up.</p>
           </div>
           <a href="#free-trial" className="btn-primary px-8 py-4 rounded-sm text-sm whitespace-nowrap shrink-0">
-            Claim Free Trial →
+            Claim Free Trial â
           </a>
         </div>
       </div>
