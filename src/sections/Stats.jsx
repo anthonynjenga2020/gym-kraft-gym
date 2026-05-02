@@ -1,6 +1,7 @@
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function Stats({ config }) {
+  if (!config.stats?.length) return null
   const ref = useReveal()
 
   return (
