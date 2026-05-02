@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function FAQ({ config }) {
+  if (!config.faqs?.length) return null
   const [openIndex, setOpenIndex] = useState(null)
   const headerRef = useReveal()
   const contentRef = useReveal()
@@ -31,7 +32,7 @@ export default function FAQ({ config }) {
               onMouseOver={e => { e.currentTarget.style.borderColor = 'var(--primary)'; e.currentTarget.style.backgroundColor = 'rgba(255,78,26,0.08)' }}
               onMouseOut={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.backgroundColor = 'transparent' }}
             >
-              Ask a Question →
+              Ask a Question â
             </a>
           </div>
 
