@@ -2,11 +2,11 @@ export default function Footer({ config }) {
   const year = new Date().getFullYear()
 
   const links = [
-    { label: 'About', href: '#about' },
-    { label: 'Classes', href: '#classes' },
-    { label: 'Trainers', href: '#trainers' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'About', href: '/#about' },
+    { label: 'Classes', href: '/classes' },
+    { label: 'Trainers', href: '/trainers' },
+    { label: 'Pricing', href: '/#pricing' },
+    { label: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -85,16 +85,18 @@ export default function Footer({ config }) {
           <div>
             <p className="text-gray-500 text-xs uppercase tracking-[0.2em] font-bold mb-6">Opening Hours</p>
             <ul className="space-y-3">
-              {[
-                { day: 'Mon – Fri', hours: '5:00 AM – 10:00 PM' },
-                { day: 'Saturday', hours: '6:00 AM – 8:00 PM' },
-                { day: 'Sunday', hours: '7:00 AM – 6:00 PM' },
-              ].map((item, i) => (
-                <li key={i} className="flex justify-between text-sm">
-                  <span className="text-gray-500">{item.day}</span>
-                  <span className="text-white font-medium">{item.hours}</span>
-                </li>
-              ))}
+              {(config.openingHours ?? 'Mon–Fri: 5:30am–9pm\nSat–Sun: 6am–7pm')
+                .split('\n')
+                .filter(Boolean)
+                .map((line, i) => {
+                  const [day, ...rest] = line.split(':')
+                  return (
+                    <li key={i} className="flex justify-between text-sm gap-4">
+                      <span className="text-gray-500 shrink-0">{day.trim()}</span>
+                      <span className="text-white font-medium text-right">{rest.join(':').trim()}</span>
+                    </li>
+                  )
+                })}
             </ul>
             <a
               href={`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent('Hi! I want to claim my free 7-day trial.')}`}

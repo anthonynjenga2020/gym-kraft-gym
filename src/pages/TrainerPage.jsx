@@ -17,7 +17,7 @@ export default function TrainerPage({ config }) {
   }
 
   // Get all classes this trainer teaches across all days
-  const trainerClasses = config.schedule.flatMap(day =>
+  const trainerClasses = (config.schedule ?? []).flatMap(day =>
     day.classes
       .filter(cls => cls.trainer === trainer.name)
       .map(cls => ({ ...cls, day: day.day }))
@@ -64,10 +64,12 @@ export default function TrainerPage({ config }) {
                   <div className="w-1 h-5 rounded-full" style={{ backgroundColor: 'var(--primary)' }} />
                   <span className="text-white font-bold text-sm uppercase tracking-widest">{trainer.experience} Experience</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1 h-5 rounded-full" style={{ backgroundColor: 'var(--border)' }} />
-                  <span className="text-gray-400 text-sm">{trainer.availableDays.length} days/week</span>
-                </div>
+                {(trainer.availableDays ?? []).length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-5 rounded-full" style={{ backgroundColor: 'var(--border)' }} />
+                    <span className="text-gray-400 text-sm">{trainer.availableDays.length} days/week</span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -95,7 +97,7 @@ export default function TrainerPage({ config }) {
                   "
                 </div>
                 <p className="text-white text-xl font-medium leading-relaxed italic pt-4">
-                  {trainer.quote}
+                  {trainer.quote ?? trainer.bio}
                 </p>
               </div>
 
@@ -172,10 +174,11 @@ export default function TrainerPage({ config }) {
               </div>
 
               {/* Specialties */}
+              {(trainer.specialties ?? []).length > 0 && (
               <div className="p-6 rounded-sm border" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
                 <h3 className="font-headline font-bold text-white uppercase text-sm mb-4 tracking-widest">Specialties</h3>
                 <div className="flex flex-wrap gap-2">
-                  {trainer.specialties.map((s, i) => (
+                  {(trainer.specialties ?? []).map((s, i) => (
                     <span key={i} className="text-xs px-2.5 py-1 rounded-sm border text-gray-300"
                       style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg)' }}>
                       {s}
@@ -183,14 +186,16 @@ export default function TrainerPage({ config }) {
                   ))}
                 </div>
               </div>
+              )}
 
               {/* Availability */}
+              {(trainer.availableDays ?? []).length > 0 && (
               <div className="p-6 rounded-sm border" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
                 <h3 className="font-headline font-bold text-white uppercase text-sm mb-4 tracking-widest">Available Days</h3>
                 <div className="grid grid-cols-7 gap-1">
                   {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((d, i) => {
                     const fullDay = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][i]
-                    const available = trainer.availableDays.includes(fullDay)
+                    const available = (trainer.availableDays ?? []).includes(fullDay)
                     return (
                       <div key={d} className="flex flex-col items-center gap-1">
                         <span className="text-gray-600 text-xs">{d}</span>
@@ -212,6 +217,7 @@ export default function TrainerPage({ config }) {
                   })}
                 </div>
               </div>
+              )}
 
               {/* Book PT */}
               <div className="p-6 rounded-sm border" style={{ borderColor: 'var(--primary)', backgroundColor: 'rgba(255,78,26,0.05)' }}>

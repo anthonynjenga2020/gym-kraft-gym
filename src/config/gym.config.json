@@ -33,25 +33,25 @@
   "services": [
     {
       "name": "Weight Training",
-      "icon": "dumbbell",
+      "icon": "🏋️",
       "desc": "Build serious strength with free weights, machines, and expert programming tailored to your goals.",
       "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80"
     },
     {
       "name": "Cardio",
-      "icon": "heart",
+      "icon": "🏃",
       "desc": "Boost endurance and torch calories with treadmills, bikes, rowing machines and more.",
       "image": "https://images.unsplash.com/photo-1600881333168-2ef49b341f30?w=800&q=80"
     },
     {
       "name": "HIIT",
-      "icon": "zap",
+      "icon": "⚡",
       "desc": "High-intensity interval training that burns fat long after you leave the gym.",
       "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80"
     },
     {
       "name": "Yoga & Zumba",
-      "icon": "activity",
+      "icon": "🧘",
       "desc": "Recover, stretch, and move with our group yoga and Zumba classes — open to all levels.",
       "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
     }
@@ -187,10 +187,11 @@
     }
   ],
   "socialLinks": {
-    "instagram": "@kraftgym",
-    "facebook": "@kraftgym",
-    "whatsapp": "0702936212"
+    "instagram": "https://instagram.com/kraftgym",
+    "facebook": "https://facebook.com/kraftgym",
+    "whatsapp": "https://wa.me/254799004276"
   },
+  "openingHours": "Mon–Fri: 5:30am–9pm\nSaturday: 6am–7pm\nSunday: 7am–5pm",
   "googlePlaceId": "ChIJN1t_tDeuEmsRUsoyG83frY4",
   "paystackPublicKey": "",
   "deployedUrl": "",

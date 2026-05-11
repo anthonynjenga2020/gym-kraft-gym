@@ -10,21 +10,24 @@ const levelColors = {
 }
 
 export default function ClassesPage({ config }) {
-  const days = config.schedule.map(d => d.day)
+  const schedule = config.schedule ?? []
+  const hasSchedule = schedule.length > 0
+
+  const days = schedule.map(d => d.day)
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' })
-  const defaultDay = days.includes(today) ? today : days[0]
+  const defaultDay = days.includes(today) ? today : days[0] ?? ''
   const [activeDay, setActiveDay] = useState(defaultDay)
   const [activeFilter, setActiveFilter] = useState('All')
   const heroRef = useReveal()
   const servicesRef = useReveal()
   const scheduleRef = useReveal()
 
-  const dayData = config.schedule.find(d => d.day === activeDay)
+  const dayData = hasSchedule ? schedule.find(d => d.day === activeDay) : null
 
   const levels = ['All', 'All Levels', 'Beginner', 'Intermediate', 'Advanced']
-  const filteredClasses = activeFilter === 'All'
-    ? dayData?.classes
-    : dayData?.classes.filter(c => c.level === activeFilter)
+  const filteredClasses = !dayData ? [] : activeFilter === 'All'
+    ? dayData.classes
+    : dayData.classes.filter(c => c.level === activeFilter)
 
   return (
     <div style={{ backgroundColor: 'var(--bg)' }}>
@@ -116,6 +119,23 @@ export default function ClassesPage({ config }) {
               </a>
             </div>
 
+            {!hasSchedule ? (
+              /* No schedule configured yet */
+              <div className="text-center py-20 border rounded-sm" style={{ borderColor: 'var(--border)' }}>
+                <p className="font-headline font-black text-2xl text-white uppercase mb-3">Schedule Coming Soon</p>
+                <p className="text-gray-500 text-sm max-w-sm mx-auto mb-8">
+                  Our full class timetable will be published here. In the meantime, WhatsApp us to find out what's running this week.
+                </p>
+                <a
+                  href={`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent('Hi! Can you share the class schedule for this week?')}`}
+                  target="_blank" rel="noopener noreferrer"
+                  className="btn-primary px-8 py-3 rounded-sm text-sm inline-block"
+                >
+                  Ask on WhatsApp →
+                </a>
+              </div>
+            ) : (
+              <>
             {/* Day tabs */}
             <div className="flex gap-1 mb-6 overflow-x-auto pb-2 scrollbar-none">
               {days.map(day => (
@@ -230,6 +250,8 @@ export default function ClassesPage({ config }) {
                 </div>
               ))}
             </div>
+              </>
+            )}
           </div>
         </div>
       </section>

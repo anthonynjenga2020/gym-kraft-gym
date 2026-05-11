@@ -1,16 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
 
-const QUICK_REPLIES = [
-  { label: 'Membership Pricing', msg: 'Hi! I would like to know about your membership pricing and plans.' },
-  { label: 'Book a Free Trial', msg: 'Hi! I would like to book a free trial session at Kraft Gym.' },
-  { label: 'Class Schedule', msg: 'Hi! Can you share the class schedule and timetable?' },
-  { label: 'Location & Hours', msg: 'Hi! What are your opening hours and where exactly are you located?' },
-]
-
-const BOT_GREETING = "Hi there! Welcome to Kraft Gym. How can I help you today?"
-const BOT_SUBTEXT  = "Choose an option below or type your message."
-
 export default function WhatsAppButton({ config }) {
+  const QUICK_REPLIES = [
+    { label: 'Membership Pricing', msg: 'Hi! I would like to know about your membership pricing and plans.' },
+    { label: 'Book a Free Trial',  msg: `Hi! I would like to book a free trial session at ${config.gymName}.` },
+    { label: 'Class Schedule',     msg: 'Hi! Can you share the class schedule and timetable?' },
+    { label: 'Location & Hours',   msg: 'Hi! What are your opening hours and where exactly are you located?' },
+  ]
+  const BOT_GREETING = `Hi there! Welcome to ${config.gymName}. How can I help you today?`
+  const BOT_SUBTEXT  = "Choose an option below or type your message."
   const [open, setOpen]         = useState(false)
   const [typing, setTyping]     = useState(false)
   const [greetingVisible, setGreetingVisible] = useState(false)

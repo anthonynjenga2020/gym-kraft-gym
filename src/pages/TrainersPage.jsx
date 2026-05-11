@@ -61,26 +61,33 @@ export default function TrainersPage({ config }) {
                   <h3 className="font-headline font-black text-2xl text-white uppercase mb-1">{trainer.name}</h3>
                   <p className="text-sm mb-4" style={{ color: 'var(--primary)' }}>{trainer.specialty}</p>
 
-                  {/* Specialties */}
-                  <div className="flex flex-wrap gap-1.5 mb-5">
-                    {trainer.specialties.slice(0, 3).map((s, i) => (
-                      <span key={i} className="text-xs px-2 py-0.5 rounded-sm text-gray-400 border"
-                        style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg)' }}>
-                        {s}
-                      </span>
-                    ))}
-                    {trainer.specialties.length > 3 && (
-                      <span className="text-xs px-2 py-0.5 rounded-sm text-gray-600 border"
-                        style={{ borderColor: 'var(--border)' }}>
-                        +{trainer.specialties.length - 3}
-                      </span>
-                    )}
-                  </div>
+                  {/* Certifications / Specialties */}
+                  {(() => {
+                    const tags = trainer.specialties ?? trainer.certifications ?? []
+                    return (
+                      <div className="flex flex-wrap gap-1.5 mb-5">
+                        {tags.slice(0, 3).map((s, i) => (
+                          <span key={i} className="text-xs px-2 py-0.5 rounded-sm text-gray-400 border"
+                            style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg)' }}>
+                            {s}
+                          </span>
+                        ))}
+                        {tags.length > 3 && (
+                          <span className="text-xs px-2 py-0.5 rounded-sm text-gray-600 border"
+                            style={{ borderColor: 'var(--border)' }}>
+                            +{tags.length - 3}
+                          </span>
+                        )}
+                      </div>
+                    )
+                  })()}
 
-                  {/* Quote */}
-                  <p className="text-gray-500 text-xs italic leading-relaxed mb-5 line-clamp-2">
-                    "{trainer.quote}"
-                  </p>
+                  {/* Bio / Quote */}
+                  {(trainer.quote || trainer.bio) && (
+                    <p className="text-gray-500 text-xs italic leading-relaxed mb-5 line-clamp-2">
+                      "{trainer.quote ?? trainer.bio}"
+                    </p>
+                  )}
 
                   {/* View profile */}
                   <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-all duration-200"

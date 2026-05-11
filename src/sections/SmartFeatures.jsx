@@ -1,6 +1,7 @@
 import { useReveal } from '../hooks/useReveal.js'
 
-const features = [
+function buildFeatures(gymName) {
+  return [
   {
     icon: (
       <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
@@ -34,7 +35,7 @@ const features = [
     color: '#4C9FFF',
     label: 'Missed Call Text-Back',
     title: 'Never Lose a Lead to Voicemail',
-    desc: "If a potential member calls and nobody picks up, they automatically get a WhatsApp message within 60 seconds: 'Hey! We missed your call at Ironclad. How can we help?' Most leads are won or lost in that first minute.",
+    desc: `If a potential member calls and nobody picks up, they automatically get a WhatsApp message within 60 seconds: "Hey! We missed your call at ${gymName}. How can we help?" Most leads are won or lost in that first minute.`,
     highlight: 'Responds in 60 sec',
   },
   {
@@ -49,9 +50,11 @@ const features = [
     desc: "One-click WhatsApp campaigns to inactive members, birthday messages, referral offers, and seasonal promos — sent automatically. Your members feel remembered. Your retention numbers reflect it.",
     highlight: 'One-click sends',
   },
-]
+  ]
+}
 
 export default function SmartFeatures({ config }) {
+  const features = buildFeatures(config.gymName)
   const headerRef = useReveal()
   const gridRef = useReveal()
 
