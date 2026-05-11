@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal.js'
 
 function StarRating({ rating }) {
@@ -105,10 +106,8 @@ export default function Testimonials({ config }) {
         {/* Leave a review CTA */}
         <div className="mt-10 text-center">
           <p className="text-gray-600 text-sm mb-4">Had a great experience? Let the world know.</p>
-          <a
-            href={`https://search.google.com/local/writereview?placeid=${config.googlePlaceId || ''}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/review"
             className="btn-outline inline-flex items-center gap-2 px-6 py-3 rounded-sm text-sm"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24">
@@ -118,7 +117,7 @@ export default function Testimonials({ config }) {
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
             </svg>
             Leave Us a Google Review
-          </a>
+          </Link>
         </div>
       </div>
     </section>
