@@ -2,43 +2,58 @@
   "gymId": "kraft-gym",
   "gymName": "Kraft Gym",
   "tagline": "Built Different. Train Different",
-  "phone": "0702936212",
-  "whatsappNumber": "0702936212",
+  "subTagline": "Nairobi's premier strength & conditioning facility — where serious athletes are made.",
+  "trialCTA": "Start Free Trial",
+  "phone": "+254799004276",
+  "whatsappNumber": "254799004276",
   "email": "kraftgym@gmail.com",
   "location": "PMC7+GCR, Dagoretti Rd, Rungiri",
   "googleMapsEmbed": "https://maps.google.com/maps?q=Kraft%20Gym%2C%20PMC7%2BGCR%2C%20Dagoretti%20Rd%2C%20Rungiri&output=embed&z=16",
   "logoUrl": "",
-  "heroImageUrl": "",
-  "galleryImages": [],
+  "heroImageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80",
+    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80",
+    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&q=80",
+    "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&q=80",
+    "https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=1200&q=80"
+  ],
   "primaryColor": "#DC2626",
   "accentColor": "#1A1A1A",
   "templateVariant": "V1",
   "aboutTitle": "About Kraft Gym",
-  "aboutDescription": "We are a professional fitness and wellness gym equipped with modern equipment and certified trainers. We offer aerobics, Zumba, spinning and tabata.",
+  "aboutDescription": "Kraft Gym is Nairobi's go-to facility for people who take their fitness seriously. We combine professional-grade equipment, certified coaches, and a community that pushes you beyond limits. Whether you're dropping fat, building muscle, or training for sport — we have the program, the space, and the team to get you there.",
+  "stats": [
+    { "value": "500+", "label": "Active Members" },
+    { "value": "12+", "label": "Expert Trainers" },
+    { "value": "8", "label": "Years Running" },
+    { "value": "4.9★", "label": "Google Rating" }
+  ],
   "services": [
     {
       "name": "Weight Training",
       "icon": "dumbbell",
-      "desc": "Build strength with expert guidance.",
-      "image": ""
+      "desc": "Build serious strength with free weights, machines, and expert programming tailored to your goals.",
+      "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80"
     },
     {
       "name": "Cardio",
       "icon": "heart",
-      "desc": "Boost endurance and burn calories.",
-      "image": ""
+      "desc": "Boost endurance and torch calories with treadmills, bikes, rowing machines and more.",
+      "image": "https://images.unsplash.com/photo-1600881333168-2ef49b341f30?w=800&q=80"
     },
     {
       "name": "HIIT",
       "icon": "zap",
-      "desc": "High-intensity interval training.",
-      "image": ""
+      "desc": "High-intensity interval training that burns fat long after you leave the gym.",
+      "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80"
     },
     {
-      "name": "Yoga",
+      "name": "Yoga & Zumba",
       "icon": "activity",
-      "desc": "Flexibility, balance, and mindfulness.",
-      "image": ""
+      "desc": "Recover, stretch, and move with our group yoga and Zumba classes — open to all levels.",
+      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
     }
   ],
   "membershipPlans": [
@@ -47,7 +62,13 @@
       "price": 2500,
       "currency": "KES",
       "period": "month",
-      "features": [],
+      "features": [
+        "Full gym floor access",
+        "Cardio equipment access",
+        "2 group classes/week",
+        "Locker room & showers",
+        "Free welcome session"
+      ],
       "highlight": false
     },
     {
@@ -55,7 +76,14 @@
       "price": 4500,
       "currency": "KES",
       "period": "month",
-      "features": [],
+      "features": [
+        "Everything in Starter",
+        "Unlimited group classes",
+        "1 PT session/month",
+        "Nutrition guidance",
+        "Priority class booking",
+        "Progress tracking app"
+      ],
       "highlight": true,
       "badge": "Most Popular"
     },
@@ -64,19 +92,111 @@
       "price": 8000,
       "currency": "KES",
       "period": "month",
-      "features": [],
+      "features": [
+        "Everything in Pro",
+        "4 PT sessions/month",
+        "Custom training program",
+        "Body composition scans",
+        "24/7 gym access",
+        "Guest passes (2/month)",
+        "Dedicated coach"
+      ],
       "highlight": false
     }
   ],
-  "trainers": [],
-  "testimonials": [],
+  "trainers": [
+    {
+      "id": "james-otieno",
+      "name": "James Otieno",
+      "specialty": "Strength & Powerlifting",
+      "experience": "8 years",
+      "bio": "James is a certified strength coach and former national powerlifting champion. He specialises in helping clients build raw, functional strength with correct form and progressive overload principles.",
+      "certifications": ["NASM-CPT", "CSCS", "CrossFit L2"],
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+    },
+    {
+      "id": "amina-wanjiku",
+      "name": "Amina Wanjiku",
+      "specialty": "HIIT & Fat Loss",
+      "experience": "6 years",
+      "bio": "Amina is passionate about transforming bodies through high-intensity training and smart nutrition. Her classes are intense, energetic, and always produce results.",
+      "certifications": ["ACE-CPT", "TRX Trainer", "Precision Nutrition L1"],
+      "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80"
+    },
+    {
+      "id": "brian-kimani",
+      "name": "Brian Kimani",
+      "specialty": "Athletic Performance",
+      "experience": "5 years",
+      "bio": "Brian works with athletes and active individuals who want to move better, run faster, and recover smarter. His sports-science background gives every session an edge.",
+      "certifications": ["NASM-PES", "FMS Level 2", "Sports First Aid"],
+      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&q=80"
+    },
+    {
+      "id": "grace-muthoni",
+      "name": "Grace Muthoni",
+      "specialty": "Yoga & Mobility",
+      "experience": "7 years",
+      "bio": "Grace brings calm, precision and deep anatomical knowledge to every yoga and mobility session. Perfect for members recovering from injury or simply wanting to move pain-free.",
+      "certifications": ["RYT-500", "NASM-CES", "Pre & Post-Natal Yoga"],
+      "image": "https://images.unsplash.com/photo-1611672585731-fa10d931762a?w=600&q=80"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Kevin M.",
+      "text": "Joined Kraft Gym 6 months ago and I've lost 18kg. The coaches actually care about your progress — not just checking you in at the door. Best investment I've made.",
+      "rating": 5,
+      "date": "March 2025",
+      "platform": "Google"
+    },
+    {
+      "name": "Stacy N.",
+      "text": "The HIIT classes with Amina are absolutely fire. I dread them and love them at the same time. Results speak for themselves — I'm in the best shape of my life at 34.",
+      "rating": 5,
+      "date": "February 2025",
+      "platform": "Google"
+    },
+    {
+      "name": "David O.",
+      "text": "Clean gym, professional staff, great equipment. I've been to 4 gyms in Nairobi and Kraft is on another level. The Pro membership is completely worth it.",
+      "rating": 5,
+      "date": "January 2025",
+      "platform": "Google"
+    },
+    {
+      "name": "Mercy W.",
+      "text": "Grace's yoga sessions changed how I think about fitness. After a back injury I thought I was done, but 3 months in and I'm stronger than ever. Highly recommend.",
+      "rating": 5,
+      "date": "April 2025",
+      "platform": "Google"
+    },
+    {
+      "name": "Peter K.",
+      "text": "James helped me hit my first 100kg bench in 4 months. The programming is smart, the coaching is legit. This is where serious lifters come.",
+      "rating": 5,
+      "date": "March 2025",
+      "platform": "Google"
+    },
+    {
+      "name": "Aisha L.",
+      "text": "I was intimidated walking in as a total beginner but the team made me feel so welcome. 8 months later I'm coaching my friends to join. Genuinely life-changing.",
+      "rating": 5,
+      "date": "February 2025",
+      "platform": "Google"
+    }
+  ],
   "socialLinks": {
     "instagram": "@kraftgym",
     "facebook": "@kraftgym",
     "whatsapp": "0702936212"
   },
+  "googlePlaceId": "ChIJN1t_tDeuEmsRUsoyG83frY4",
   "paystackPublicKey": "",
   "deployedUrl": "",
   "vercelProjectId": "kraft-gym",
-  "supabaseRowId": "979ab2eb-f946-46c1-b76f-54beb3f5692f"
+  "supabaseRowId": "979ab2eb-f946-46c1-b76f-54beb3f5692f",
+  "isPreview": false,
+  "previewPaymentUrl": "",
+  "previewOwnerName": ""
 }

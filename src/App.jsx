@@ -3,6 +3,7 @@ import config from './config/gym.config.json'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
+import PreviewBanner from './components/PreviewBanner.jsx'
 
 // Pages
 import HomePage from './pages/HomePage.jsx'
@@ -16,11 +17,21 @@ function Layout({ children }) {
   const { pathname } = useLocation()
   const isReview = pathname === '/review'
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--bg)' }}>
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundColor: 'var(--bg)',
+        // Push content down when preview top-bar is visible
+        paddingTop: config.isPreview ? '32px' : undefined,
+        // Push content up from preview bottom-bar
+        paddingBottom: config.isPreview ? '80px' : undefined,
+      }}
+    >
       {!isReview && <Navbar config={config} />}
       {children}
       {!isReview && <Footer config={config} />}
       {!isReview && <WhatsAppButton config={config} />}
+      {config.isPreview && <PreviewBanner config={config} />}
     </div>
   )
 }

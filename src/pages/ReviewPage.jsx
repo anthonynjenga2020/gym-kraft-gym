@@ -49,10 +49,34 @@ export default function ReviewPage({ config }) {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-6 py-20"
+      className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden"
       style={{ backgroundColor: 'var(--bg)' }}
     >
-      <div className="w-full max-w-lg">
+      {/* Background: blurred gym image */}
+      <div
+        className="absolute inset-0 z-0 opacity-10"
+        style={{
+          backgroundImage: `url(${config.heroImageUrl || 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80'})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(20px)',
+          transform: 'scale(1.1)',
+        }}
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 z-0" style={{ background: 'radial-gradient(ellipse at center, rgba(var(--primary-rgb, 220 38 38) / 0.08) 0%, transparent 70%)' }} />
+
+      {/* Floating card with entrance animation */}
+      <div
+        className="w-full max-w-lg relative z-10"
+        style={{ animation: 'floatIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both' }}
+      >
+      <style>{`
+        @keyframes floatIn {
+          from { opacity: 0; transform: translateY(24px) scale(0.97); }
+          to   { opacity: 1; transform: translateY(0)    scale(1); }
+        }
+      `}</style>
 
         {/* Gym logo / name */}
         <div className="text-center mb-12">
@@ -74,8 +98,12 @@ export default function ReviewPage({ config }) {
         {/* ── STEP: RATE ──────────────────────────────── */}
         {step === 'rate' && (
           <div
-            className="rounded-sm border p-10 text-center"
-            style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+            className="rounded-2xl border p-10 text-center backdrop-blur-sm"
+            style={{
+              backgroundColor: 'rgba(20,24,30,0.92)',
+              borderColor: 'rgba(255,255,255,0.08)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,0.04), 0 32px 64px rgba(0,0,0,0.6)',
+            }}
           >
             <h1 className="font-headline font-black text-3xl text-white uppercase mb-3">
               How Are We Doing?
@@ -127,8 +155,12 @@ export default function ReviewPage({ config }) {
         {/* ── STEP: REDIRECT (happy member) ────────────── */}
         {step === 'redirect' && (
           <div
-            className="rounded-sm border p-10 text-center"
-            style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+            className="rounded-2xl border p-10 text-center backdrop-blur-sm"
+            style={{
+              backgroundColor: 'rgba(20,24,30,0.92)',
+              borderColor: 'rgba(255,255,255,0.08)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,0.04), 0 32px 64px rgba(0,0,0,0.6)',
+            }}
           >
             <div
               className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
@@ -163,8 +195,12 @@ export default function ReviewPage({ config }) {
         {/* ── STEP: FEEDBACK (unhappy member) ──────────── */}
         {step === 'feedback' && (
           <div
-            className="rounded-sm border p-10"
-            style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+            className="rounded-2xl border p-10 backdrop-blur-sm"
+            style={{
+              backgroundColor: 'rgba(20,24,30,0.92)',
+              borderColor: 'rgba(255,255,255,0.08)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,0.04), 0 32px 64px rgba(0,0,0,0.6)',
+            }}
           >
             <div className="flex mb-2">
               {stars.map(s => (
@@ -251,8 +287,12 @@ export default function ReviewPage({ config }) {
         {/* ── STEP: DONE (after feedback) ───────────────── */}
         {step === 'done' && (
           <div
-            className="rounded-sm border p-10 text-center"
-            style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+            className="rounded-2xl border p-10 text-center backdrop-blur-sm"
+            style={{
+              backgroundColor: 'rgba(20,24,30,0.92)',
+              borderColor: 'rgba(255,255,255,0.08)',
+              boxShadow: '0 0 0 1px rgba(255,255,255,0.04), 0 32px 64px rgba(0,0,0,0.6)',
+            }}
           >
             <div
               className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
