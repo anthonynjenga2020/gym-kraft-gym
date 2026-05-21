@@ -4,20 +4,20 @@
   "tagline": "Built Different. Train Different",
   "subTagline": "Nairobi's premier strength & conditioning facility — where serious athletes are made.",
   "trialCTA": "Start Free Trial",
-  "phone": "+254799004276",
-  "whatsappNumber": "254799004276",
+  "phone": "+254702936212",
+  "whatsappNumber": "254702936212",
   "email": "kraftgym@gmail.com",
   "location": "PMC7+GCR, Dagoretti Rd, Rungiri",
   "googleMapsEmbed": "https://maps.google.com/maps?q=Kraft%20Gym%2C%20PMC7%2BGCR%2C%20Dagoretti%20Rd%2C%20Rungiri&output=embed&z=16",
   "logoUrl": "",
-  "heroImageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80",
+  "heroImageUrl": "/gym (7).jpg",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&q=80",
-    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80",
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-    "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1200&q=80",
-    "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&q=80",
-    "https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=1200&q=80"
+    "/gym (4).jpg",
+    "/gym (6).jpg",
+    "/gym (11).jpg",
+    "/gym (12).jpg",
+    "/gym (13).jpg",
+    "/gym (3).jpg"
   ],
   "primaryColor": "#DC2626",
   "accentColor": "#1A1A1A",
@@ -35,25 +35,25 @@
       "name": "Weight Training",
       "icon": "🏋️",
       "desc": "Build serious strength with free weights, machines, and expert programming tailored to your goals.",
-      "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80"
+      "image": "/gym (2).jpg"
     },
     {
       "name": "Cardio",
       "icon": "🏃",
       "desc": "Boost endurance and torch calories with treadmills, bikes, rowing machines and more.",
-      "image": "https://images.unsplash.com/photo-1600881333168-2ef49b341f30?w=800&q=80"
+      "image": "/gym (8).jpg"
     },
     {
       "name": "HIIT",
       "icon": "⚡",
       "desc": "High-intensity interval training that burns fat long after you leave the gym.",
-      "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80"
+      "image": "/gym (9).jpg"
     },
     {
       "name": "Yoga & Zumba",
       "icon": "🧘",
       "desc": "Recover, stretch, and move with our group yoga and Zumba classes — open to all levels.",
-      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
+      "image": "/gym (5).jpg"
     }
   ],
   "membershipPlans": [
@@ -112,7 +112,7 @@
       "experience": "8 years",
       "bio": "James is a certified strength coach and former national powerlifting champion. He specialises in helping clients build raw, functional strength with correct form and progressive overload principles.",
       "certifications": ["NASM-CPT", "CSCS", "CrossFit L2"],
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+      "image": "/gym (1).jpg"
     },
     {
       "id": "amina-wanjiku",
@@ -121,7 +121,7 @@
       "experience": "6 years",
       "bio": "Amina is passionate about transforming bodies through high-intensity training and smart nutrition. Her classes are intense, energetic, and always produce results.",
       "certifications": ["ACE-CPT", "TRX Trainer", "Precision Nutrition L1"],
-      "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80"
+      "image": "/gym (10).jpg"
     },
     {
       "id": "brian-kimani",
@@ -130,7 +130,7 @@
       "experience": "5 years",
       "bio": "Brian works with athletes and active individuals who want to move better, run faster, and recover smarter. His sports-science background gives every session an edge.",
       "certifications": ["NASM-PES", "FMS Level 2", "Sports First Aid"],
-      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=600&q=80"
+      "image": "/gym (3).jpg"
     },
     {
       "id": "grace-muthoni",
@@ -139,7 +139,7 @@
       "experience": "7 years",
       "bio": "Grace brings calm, precision and deep anatomical knowledge to every yoga and mobility session. Perfect for members recovering from injury or simply wanting to move pain-free.",
       "certifications": ["RYT-500", "NASM-CES", "Pre & Post-Natal Yoga"],
-      "image": "https://images.unsplash.com/photo-1611672585731-fa10d931762a?w=600&q=80"
+      "image": "/gym (6).jpg"
     }
   ],
   "testimonials": [
@@ -189,7 +189,7 @@
   "socialLinks": {
     "instagram": "https://instagram.com/kraftgym",
     "facebook": "https://facebook.com/kraftgym",
-    "whatsapp": "https://wa.me/254799004276"
+    "whatsapp": "https://wa.me/254702936212"
   },
   "openingHours": "Mon–Fri: 5:30am–9pm\nSaturday: 6am–7pm\nSunday: 7am–5pm",
   "googlePlaceId": "ChIJN1t_tDeuEmsRUsoyG83frY4",
