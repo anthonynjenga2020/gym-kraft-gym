@@ -1,29 +1,31 @@
 {
   "gymId": "kraft-gym",
   "gymName": "Kraft Gym",
-  "tagline": "Built Different. Train Different",
+  "tagline": "Rahisi sana",
   "subTagline": "Nairobi's premier strength & conditioning facility — where serious athletes are made.",
-  "trialCTA": "Start Free Trial",
-  "phone": "+254702936212",
+  "trialCTA": "Plan a Visit",
+  "phone": "0702 936 212",
   "whatsappNumber": "254702936212",
   "email": "kraftgym@gmail.com",
-  "location": "PMC7+GCR, Dagoretti Rd, Rungiri",
+  "location": "Behind Jaza supermarket Thogoto-Gikambura",
   "googleMapsEmbed": "https://maps.google.com/maps?q=Kraft%20Gym%2C%20PMC7%2BGCR%2C%20Dagoretti%20Rd%2C%20Rungiri&output=embed&z=16",
   "logoUrl": "",
-  "heroImageUrl": "/gym (7).jpg",
+  "heroImageUrl": "/kraft1.jpeg",
   "galleryImages": [
-    "/gym (4).jpg",
-    "/gym (6).jpg",
-    "/gym (11).jpg",
-    "/gym (12).jpg",
-    "/gym (13).jpg",
-    "/gym (3).jpg"
+    "/kraft2.jpeg",
+    "/kraft3.jpeg",
+    "/kraft4.jpeg",
+    "/kraft5.jpeg",
+    "/kraft6.jpeg",
+    "/kraft7.jpeg"
   ],
   "primaryColor": "#DC2626",
   "accentColor": "#1A1A1A",
   "templateVariant": "V1",
   "aboutTitle": "About Kraft Gym",
   "aboutDescription": "Kraft Gym is Nairobi's go-to facility for people who take their fitness seriously. We combine professional-grade equipment, certified coaches, and a community that pushes you beyond limits. Whether you're dropping fat, building muscle, or training for sport — we have the program, the space, and the team to get you there.",
+  "aboutImageUrl": "/kraft11.jpeg",
+  "eventsImageUrl": "/kraft27.jpeg",
   "stats": [
     { "value": "500+", "label": "Active Members" },
     { "value": "12+", "label": "Expert Trainers" },
@@ -32,75 +34,133 @@
   ],
   "services": [
     {
-      "name": "Weight Training",
+      "name": "Aerobics & Dance",
+      "icon": "💃",
+      "desc": "High energy Aerobics, Katabox, Salsa, Dance, and Zhumba sessions to keep you moving.",
+      "image": "/kraft8.jpeg"
+    },
+    {
+      "name": "Spin Classes",
+      "icon": "🚴",
+      "desc": "Intense indoor cycling to build endurance and burn serious calories.",
+      "image": "/kraft9.jpeg"
+    },
+    {
+      "name": "Strength & Bodybuilding",
       "icon": "🏋️",
-      "desc": "Build serious strength with free weights, machines, and expert programming tailored to your goals.",
-      "image": "/gym (2).jpg"
+      "desc": "Toning, body recomposition, and bodybuilding with expert guidance.",
+      "image": "/kraft10.jpeg"
     },
     {
-      "name": "Cardio",
-      "icon": "🏃",
-      "desc": "Boost endurance and torch calories with treadmills, bikes, rowing machines and more.",
-      "image": "/gym (8).jpg"
-    },
-    {
-      "name": "HIIT",
+      "name": "Performance",
       "icon": "⚡",
-      "desc": "High-intensity interval training that burns fat long after you leave the gym.",
-      "image": "/gym (9).jpg"
+      "desc": "Circuits training, Strength conditioning, CrossFit and mobility training.",
+      "image": "/kraft11.jpeg"
     },
     {
-      "name": "Yoga & Zumba",
+      "name": "Recovery & Massage",
       "icon": "🧘",
-      "desc": "Recover, stretch, and move with our group yoga and Zumba classes — open to all levels.",
-      "image": "/gym (5).jpg"
+      "desc": "Hot stone massage, deep tissue work, and flexibility training to keep you injury-free.",
+      "image": "/kraft25.jpeg"
+    },
+    {
+      "name": "Personal Training",
+      "icon": "🏆",
+      "desc": "1-on-1 coaching for accelerated results tailored to your specific body and goals.",
+      "image": "/kraft12.jpeg"
+    }
+  ],
+  "schedule": [
+    {
+      "day": "Monday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Circuit", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 15 },
+        { "time": "5:30 PM", "name": "Circuit", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Spin", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 15 },
+        { "time": "5:30 PM", "name": "Spin", "level": "All Levels", "trainer": "Coach", "duration": "120m", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Strength and Conditioning", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 15 },
+        { "time": "5:30 PM", "name": "Strength and Conditioning", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "classes": [
+        { "time": "6:00 AM", "name": "Tabata & Aerobics", "level": "All Levels", "trainer": "Coach", "duration": "60m", "spots": 15 },
+        { "time": "5:30 PM", "name": "Tabata & Aerobics", "level": "All Levels", "trainer": "Coach", "duration": "90m", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Friday",
+      "classes": [
+        { "time": "6:00 AM", "name": "CrossFit", "level": "Advanced", "trainer": "Coach", "duration": "60m", "spots": 15 },
+        { "time": "5:30 PM", "name": "CrossFit", "level": "Advanced", "trainer": "Coach", "duration": "60m", "spots": 20 }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "classes": [
+        { "time": "7:30 AM", "name": "Zhumba & Spin", "level": "All Levels", "trainer": "Coach", "duration": "120m", "spots": 20 }
+      ]
     }
   ],
   "membershipPlans": [
     {
-      "name": "Starter",
-      "price": 2500,
+      "name": "Daily",
+      "price": 500,
       "currency": "KES",
-      "period": "month",
-      "features": [
-        "Full gym floor access",
-        "Cardio equipment access",
-        "2 group classes/week",
-        "Locker room & showers",
-        "Free welcome session"
-      ],
+      "period": "day",
+      "features": ["Full gym access", "Classes included"],
       "highlight": false
     },
     {
-      "name": "Pro",
-      "price": 4500,
+      "name": "Weekly",
+      "price": 2000,
+      "currency": "KES",
+      "period": "week",
+      "features": ["Full gym access", "Classes included"],
+      "highlight": false
+    },
+    {
+      "name": "Monthly",
+      "price": 5500,
       "currency": "KES",
       "period": "month",
-      "features": [
-        "Everything in Starter",
-        "Unlimited group classes",
-        "1 PT session/month",
-        "Nutrition guidance",
-        "Priority class booking",
-        "Progress tracking app"
-      ],
+      "features": ["Full gym access", "Classes included", "Nutrition advice"],
       "highlight": true,
       "badge": "Most Popular"
     },
     {
-      "name": "Elite",
-      "price": 8000,
+      "name": "3 Months",
+      "price": 14000,
       "currency": "KES",
-      "period": "month",
-      "features": [
-        "Everything in Pro",
-        "4 PT sessions/month",
-        "Custom training program",
-        "Body composition scans",
-        "24/7 gym access",
-        "Guest passes (2/month)",
-        "Dedicated coach"
-      ],
+      "period": "3 months",
+      "features": ["Full gym access", "Classes included", "Nutrition advice"],
+      "highlight": false
+    },
+    {
+      "name": "6 Months",
+      "price": 22000,
+      "currency": "KES",
+      "period": "6 months",
+      "features": ["Full gym access", "Classes included", "Nutrition advice"],
+      "highlight": false
+    },
+    {
+      "name": "1 Year",
+      "price": 40000,
+      "currency": "KES",
+      "period": "year",
+      "features": ["Full gym access", "Classes included", "Nutrition advice", "1 Free PT Session"],
       "highlight": false
     }
   ],
@@ -112,7 +172,7 @@
       "experience": "8 years",
       "bio": "James is a certified strength coach and former national powerlifting champion. He specialises in helping clients build raw, functional strength with correct form and progressive overload principles.",
       "certifications": ["NASM-CPT", "CSCS", "CrossFit L2"],
-      "image": "/gym (1).jpg"
+      "image": "/kraft12.jpeg"
     },
     {
       "id": "amina-wanjiku",
@@ -121,7 +181,7 @@
       "experience": "6 years",
       "bio": "Amina is passionate about transforming bodies through high-intensity training and smart nutrition. Her classes are intense, energetic, and always produce results.",
       "certifications": ["ACE-CPT", "TRX Trainer", "Precision Nutrition L1"],
-      "image": "/gym (10).jpg"
+      "image": "/kraft13.jpeg"
     },
     {
       "id": "brian-kimani",
@@ -130,7 +190,7 @@
       "experience": "5 years",
       "bio": "Brian works with athletes and active individuals who want to move better, run faster, and recover smarter. His sports-science background gives every session an edge.",
       "certifications": ["NASM-PES", "FMS Level 2", "Sports First Aid"],
-      "image": "/gym (3).jpg"
+      "image": "/kraft15.jpeg"
     },
     {
       "id": "grace-muthoni",
@@ -139,7 +199,7 @@
       "experience": "7 years",
       "bio": "Grace brings calm, precision and deep anatomical knowledge to every yoga and mobility session. Perfect for members recovering from injury or simply wanting to move pain-free.",
       "certifications": ["RYT-500", "NASM-CES", "Pre & Post-Natal Yoga"],
-      "image": "/gym (6).jpg"
+      "image": "/kraft16.jpeg"
     }
   ],
   "testimonials": [
@@ -191,7 +251,30 @@
     "facebook": "https://facebook.com/kraftgym",
     "whatsapp": "https://wa.me/254702936212"
   },
-  "openingHours": "Mon–Fri: 5:30am–9pm\nSaturday: 6am–7pm\nSunday: 7am–5pm",
+  "blog": [
+    {
+      "title": "Key Benefits of Stone Massage",
+      "category": "Recovery",
+      "date": "June 15, 2026",
+      "image": "/kraft25.jpeg",
+      "content": "1. Deep Muscle Relaxation: The heated stones warm up tight muscles fast, allowing the therapist to work deeper without causing pain.\n\n2. Improves Blood Circulation: Heat expands blood vessels, which improves circulation for faster recovery.\n\n3. Reduces Muscle Stiffness & Spasms: Hot stones help loosen stubborn areas like hamstrings or lower back.\n\n4. Stress & Cortisol Reduction: Lowers stress hormones and promotes relaxation.\n\n5. Helps With Back Pain: Heat penetrates deeper than regular massage alone.\n\n6. Better Flexibility: When muscles are warm, range of motion improves.\n\n7. Improved Sleep: Many people sleep like babies after a session."
+    },
+    {
+      "title": "Kraft Gym Rules",
+      "category": "Announcements",
+      "date": "June 10, 2026",
+      "image": "/kraft3.jpeg",
+      "content": "To ensure a great experience for everyone, please adhere to the following rules:\n\n- Do not bring food or glass items into the gym.\n- Do not leave litter or rubbish.\n- Ensure showers and toilets are left clean.\n- Re-rack weights after use.\n- Wipe down machines after use.\n- Respect other members.\n- Appropriate clothing and footwear to be worn at all times.\n- Use one machine or piece of equipment at a time and allow others to use equipment in between your sets.\n- Please be watchful of your belongings. We are not responsible for any loss."
+    },
+    {
+      "title": "Why CrossFit is Great for Everyone",
+      "category": "Training",
+      "date": "May 28, 2026",
+      "image": "/kraft21.jpeg",
+      "content": "CrossFit is constantly varied functional movements performed at high intensity. All CrossFit workouts are based on functional movements, and these movements reflect the best aspects of gymnastics, weightlifting, running, rowing and more.\n\nThe magic is in the movement. Workouts are scaled according to an individual’s fitness level, making it perfect for anyone regardless of experience. Join our Friday classes to see what it's all about!"
+    }
+  ],
+  "openingHours": "Monday-Friday: 5am to 9:30pm\nSaturday: 6am-6pm\nSunday: 7am-1pm",
   "googlePlaceId": "ChIJN1t_tDeuEmsRUsoyG83frY4",
   "paystackPublicKey": "",
   "deployedUrl": "",

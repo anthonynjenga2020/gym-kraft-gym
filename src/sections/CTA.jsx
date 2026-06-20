@@ -31,12 +31,12 @@ export default function CTA({ config }) {
         </div>
 
         <h2 className="font-headline font-black text-5xl sm:text-6xl lg:text-7xl text-white uppercase leading-tight mb-6">
-          Your First Week.<br />
-          <span style={{ color: 'var(--primary)' }}>On Us.</span>
+          Ready to Start.<br />
+          <span style={{ color: 'var(--primary)' }}>Your Journey.</span>
         </h2>
 
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-          Try any class, use all the equipment, meet the coaches — for 7 full days, completely free. No credit card, no pressure, no BS.
+          Join Kraft Gym and get access to top-tier equipment, expert coaches, and an unbeatable community. Drop in for a day pass or sign up for a full membership.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">

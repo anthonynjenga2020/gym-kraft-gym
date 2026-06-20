@@ -56,19 +56,19 @@ export default function FreeTrialForm({ config }) {
               </span>
             </div>
             <h2 className="font-headline font-black text-4xl sm:text-5xl lg:text-6xl text-white uppercase leading-tight mb-6">
-              7 Days.<br />
-              On Us.<br />
+              Plan.<br />
+              A Visit.<br />
               <span style={{ color: 'var(--primary)' }}>No Excuses.</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Try every class, use all the equipment, meet every coach. Seven full days of access — completely free. No credit card, no lock-in, no sales pressure.
+              Come experience our community, try our equipment, and see what makes us the best. Grab a day pass and let's get to work.
             </p>
             <div className="space-y-4">
               {[
-                'Unlimited access to all group classes',
+                'Drop into any of our group classes',
                 'Full gym floor access — weights, cardio, everything',
-                'One free fitness assessment with a coach',
-                'No commitment, cancel anytime after your trial',
+                'Meet our expert coaching team',
+                'No commitment, daily drop-ins welcome',
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-sm flex items-center justify-center shrink-0"
@@ -101,7 +101,7 @@ export default function FreeTrialForm({ config }) {
             ) : (
               <>
                 <h3 className="font-headline font-bold text-xl text-white uppercase mb-6">
-                  Claim Your Free Trial
+                  Book Your Visit
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -190,7 +190,7 @@ export default function FreeTrialForm({ config }) {
                         </svg>
                         Submitting...
                       </>
-                    ) : 'Start My Free Trial →'}
+                    ) : 'Plan My Visit →'}
                   </button>
 
                   <p className="text-gray-600 text-xs text-center">

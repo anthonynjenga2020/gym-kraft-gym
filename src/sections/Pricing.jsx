@@ -25,7 +25,7 @@ export default function Pricing({ config }) {
         </div>
 
         {/* Plans */}
-        <div ref={cardsRef} className={`section-reveal grid gap-6 ${config.membershipPlans.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'} max-w-5xl mx-auto`}>
+        <div ref={cardsRef} className={`section-reveal grid gap-6 ${config.membershipPlans.length % 3 === 0 ? 'md:grid-cols-3' : 'md:grid-cols-2'} max-w-6xl mx-auto`}>
           {config.membershipPlans.map((plan, i) => (
             <div
               key={i}
@@ -114,7 +114,8 @@ export default function Pricing({ config }) {
 
         {/* Footer note */}
         <p className="text-center text-gray-600 text-sm mt-10">
-          All plans include access to the gym's facilities during operating hours. M-Pesa payments accepted.
+          All plans include access to the gym's facilities during operating hours. M-Pesa payments accepted.<br/>
+          <span className="font-bold text-white">Pay bill: 247247, Acc no: 596184</span>
         </p>
       </div>
     </section>
