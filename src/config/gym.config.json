@@ -9,7 +9,7 @@
   "email": "kraftgym@gmail.com",
   "location": "Behind Jaza supermarket Thogoto-Gikambura",
   "googleMapsEmbed": "https://maps.google.com/maps?q=Kraft%20Gym%2C%20PMC7%2BGCR%2C%20Dagoretti%20Rd%2C%20Rungiri&output=embed&z=16",
-  "logoUrl": "",
+  "logoUrl": "/kraftlogo.jpg",
   "heroImageUrl": "/kraft1.jpeg",
   "galleryImages": [
     "/kraft2.jpeg",
@@ -276,6 +276,7 @@
   ],
   "openingHours": "Monday-Friday: 5am to 9:30pm\nSaturday: 6am-6pm\nSunday: 7am-1pm",
   "googlePlaceId": "ChIJN1t_tDeuEmsRUsoyG83frY4",
+  "googleReviewUrl": "https://g.page/r/CRBkgOtD7B32EAI/review",
   "paystackPublicKey": "",
   "deployedUrl": "",
   "vercelProjectId": "kraft-gym",
